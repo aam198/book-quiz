@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="style/game.css">
+    <link rel="stylesheet" href="style/app.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input 
+                type="text" 
+                name="username"
+                id="username"
+                placeholder="<username>"
+                >
+
+                <button type="submit" 
+                class="btn" 
+                id="saveScoreBtn"
+                onclick="saveHighScore(event)"
+                disabled
+                >Save<i class="icon fas fa-save"></i></button>
+            </form>
+            <div id="end_button">
+                <a class="btn" href="/game.html">Play Again!<i class="icon fas fa-gamepad"></i></a>
+                <a class="btn" href="/index.html">Go Home <i class="icon fas fa-eject"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/end.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+  }
+
+:root{
+    /* background-color: rgba(13 22 39 / 85%); */
+    background-color: rgba( 26 24 23);
+    font-size: 62.5%;
+    --blue: #353538;
+    --green: #65da41;
+    --light-blue:  rgb(53, 223,233, 0.9);
+    --red: #fe1038;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Cyber', monospace;
+    margin: 0;
+    padding: 0;
+    color: #faf9fa;
+}
+body{
+    max-height: 100rem;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 8rem;
+    color: #faf9fa;
+    margin-bottom: 10rem;
+}
+h1 > span{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* Containers and Alignments*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+.icon{
+    margin-left: 10px;
+    position: absolute;
+    color: black;
+}
+
+button.cybr-btn{
+    margin-bottom: 3rem;
+}
+
+
+/* Button */
+
+.btn{
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid rgb(53, 223,233, 0.5);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--blue);
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 -1px 10px 3px rgb(53, 223, 223);
+    transform: translateY(-0.1rem);
+    transition: transform 100ms;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.btn:after{
+    background: linear-gradient(to right, #fe1038, #00f1ff);
+    width: 0px;
+    height: 3px;
+    position: relative;
+    content: "";
+    display: block;
+    transition: all 250ms ease-in-out;
+    top: 3px;
+    left: 3rem;
+    z-index: -1;
+}
+.btn:hover:after{
+    width: 75%;
+    text-align: center;
+}
+
+#game-replay{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icon-left{
+    color: black;
+    position: relative;
+}
+
+/* End Page/Form */
+#end_button{
+    margin-top: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#end_button .btn:hover:after{
+    width: 80%;
+}
+
+form {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 1.3rem;
+    color: #474948;
+    width: 20rem;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0 0.8rem .1rem rgb(53, 223, 223);
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+/* Dot Pattern */
+
+.dot_grid{
+    display: flex;
+}
+   
+.dot_grid .one{
+    height: 20rem;
+    width: 40rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    z-index: -1;
+    background: transparent;
+    background-image: radial-gradient(#35DFE9 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: -20px -20px;
+  }
+
+  .dot_grid .two{
+    height: 10rem;
+    width: 60rem;
+    position: absolute;
+    top: 75rem;
+    right: 0rem;
+    z-index: -2;
+    background: transparent;
+    background-image: radial-gradient(#35DFE9 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: -15px -15px;
+  }
+  .dot_grid .three{
+    height: 15rem;
+    width: 50rem;
+    position: absolute;
+    bottom: 10rem;
+    right: 0rem;
+    z-index: -3;
+    background: transparent;
+    background-image: radial-gradient(#35DFE9 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: -15px -15px;
+  }
+  
+  /* Typing Style */
+#home h1{
+    text-shadow: 5px 5px 1px var(--red);
+}
+  .type {
+    width: 50%;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  @media (max-width: 760px){
+
+    .type {
+        width: 60%;
+     }
+     h1{
+        font-size: 5.5rem;
+     }
+    }
