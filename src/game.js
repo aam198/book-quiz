@@ -73,7 +73,7 @@ getNewQuestion = ()=>{
         //setting current score to local storage, for end.js
         localStorage.setItem('mostRecentScore', score);
         //go to end of game page
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
     };
     questionCounter++;
     //Now that we know how many questions, below we will update the ID questionCounterText counter visible for the user. Template literals ES6.
