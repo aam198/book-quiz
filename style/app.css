@@ -175,10 +175,12 @@ form {
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 input{
-    margin-bottom: 1.3rem;
+    margin-top:1rem;
+    margin-bottom: 1.8rem;
     color: #474948;
     width: 20rem;
     padding: 1.2rem;
@@ -189,6 +191,7 @@ input{
 
 input::placeholder{
     color: #aaa;
+    text-align: center;
 }
 
 /* Dot Pattern */
@@ -241,7 +244,7 @@ input::placeholder{
 }
   .type {
     width: 50%;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -259,6 +262,73 @@ input::placeholder{
     }
   }
 
+
+  /* CyberPunk Container grab */
+
+  .about_box{
+    position: relative;
+    top: 3vh;
+    color: #0e0e0e;
+    background-color: #fcee0a;
+    width: 544px;
+    max-width: 544px;
+    padding: 30px 40px 27px;
+    margin-bottom: 30px;
+    z-index: 3;
+}
+
+.about_box h1{
+    color: #0e0e0e;
+    font-family: BlenderProBold,sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.0714;
+    padding-bottom: 14px;
+    position: relative;
+    margin: 0 0 30px;
+    letter-spacing: -2px;
+}
+
+.about_box h1::after{
+    content: "";
+    background: url(https://www.cyberpunk.net/build/images/home3/separator-text-76372ca3.svg);
+    height: 4px;
+    width: 464px;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.about_box li{
+    font-family: BlenderProBook,sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.25;
+    color: #0e0e0e;
+    text-align: center;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+.about_box p{
+    font-family: BlenderProBook,sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+    color: #0e0e0e;
+}
+.about_box::after{
+  content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -29px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnkAAAAeCAYAAABQZwhqAAAC/ElEQVR4nO3c0VGjQACA4X1xJtknS7gS7EBLuBLs4FqwhOvg0snZgXZwNgDrO9xwD4rjqVFIINkl3z/zvykhISw/sCG0dexIkiS5LMOxV4AkSZLTK/JIkiQXqMgjSZJcoCKPJElygYo8kiTJBSrySJIkF6jII0nmY1pdhwG0Vfx19HVdkE29vv3wc55gmU29vh3191W8aap4s+/r7+ljk1ZXbb1+OPa22UeRR5LMyy9CT+BNr8j7z8cunV2EEEKXzi7aOj4ee/vsqsgjSebnltATePMo8l58CbyekkNP5JEk8/RN6Am8+RR5sWvqeN+l1bePPodSQ0/kkSU6cN7S3JQ68LEgn7/rAm9eTz3yngIvnA8Y746+rcYo8jibQ3dsjvKxSaurqSJtCoQe57ap4s2x1+EETG29/v3eKZYZ08h1+PPsvq8/yCGB19Om1XUG22qwIo/z2J99F7ZDZO67uSK5sHPoVXEz/gC+fmiqeOMk4kSs4iaEENoqbo6+LlycYwKvp6Tjmsjj9L6dR1PQDpGx2QZezy6h11+VHPU/r27pZLBdOKfPgdcj9DiluwTey3exkOOayOO0bvtFXCE7RKZmH3g9Y0OvqePd2FsyIu9EfBN4Pa7gcgr3CbyeEo5rIo/T+dWzrQrYITK0mMDrmXuOXs6RN8WBA0A5HPTq8pYTn89XMIOBkQtw4K89n54gbpL+QIsLvJ42xe9D3uPUt2t3Wd5UCjzgNDlI6O0SeMBYmmr9892XL5PHeSAvhly5/ZvWP7q0uhwZU3ddWl1+9EiNXZYn8ADsy6yhJ/BwSF4dvIu90oTDcAq36AUegBDmCb2mjvfHfl84Qdq0uhZ4GMKiQ6+KG4EHIIQQuhTOmzreO4EEcFIsMfScYQN4y1ShJ/AAFMWSQs8ADGAb+4ae8QVAkSwh9AzAAL5i19AzvgDAhIx5rp8BGAAAoCCGhJ7AAwAAKJDPQk/gAQAAFMxHoSfwAAAAFkCXzi76CdMCDwAAYEF0KZx70DGA0vkHuKSivATz0GcAAAAASUVORK5CYII=) repeat-x 100% 0;
+    height: 30px;
+}
+
+
+
+
   @media (max-width: 760px){
 
     .type {
@@ -268,3 +338,5 @@ input::placeholder{
         font-size: 5.5rem;
      }
     }
+
+

@@ -1,12 +1,14 @@
 # Build of quiz app
-> Used Fetch to pull questions from questions.json
+
 > Using Open Trivia Database API to pull in questions into quiz.
 
-#### Tech
+
+## Tech Used To Build
 
 - OpenTrivia API
 - AnimXYZ 
 
-### Updates to make
+## Updates to make
 
-> Updates to End.html
+- [x] Updates to cyberpunk end.html
+- [ ] Add IndexedDB

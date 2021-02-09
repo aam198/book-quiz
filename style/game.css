@@ -4,6 +4,9 @@
     font-display: swap;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
 :root{
     --light-blue:  rgb(53, 223,233, 0.9);
 }
@@ -217,6 +220,9 @@
   .cybr-btn:hover {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
   }
+
+ 
+
   .cybr-btn:active {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
   }
@@ -394,6 +400,12 @@
   .cybr-btn-sm:active {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
   }
+
+  .cybr-btn-sm[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
   
   .cybr-btn-sm:after,
   .cybr-btn-sm:before {
@@ -416,13 +428,13 @@
     background: var(--primary);
   }
   
-  .cybr-btn__tag {
+  .cybr-btn-sm__tag {
     position: absolute;
     padding: 1px 4px;
     letter-spacing: 1px;
     line-height: 1;
     bottom: -5%;
-    right: 5%;
+    right: 3%;
     font-weight: normal;
     color: inherit;
     font-size: var(--label-size);

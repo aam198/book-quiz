@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div id="end" class="flex-center flex-column">
+        <div id="end" class="about_box flex-center flex-column">
             <h1 id="finalScore"></h1>
             <form>
                 <input 
@@ -21,15 +21,30 @@
                 >
 
                 <button type="submit" 
-                class="btn" 
-                id="saveScoreBtn"
-                onclick="saveHighScore(event)"
-                disabled
-                >Save<i class="icon fas fa-save"></i></button>
+                 class="cybr-btn-sm"
+                 id="saveScoreBtn"
+                 onclick="saveHighScore(event)"
+                 disabled>
+                    Save<span aria-hidden>_</span>
+                    <span aria-hidden class="cybr-btn__glitch">Save_</span>
+                    <span aria-hidden class="cybr-btn-sm__tag">  R25</span>
+                </button>
+
             </form>
             <div id="end_button">
-                <a class="btn" href="./game.html">Play Again!<i class="icon fas fa-gamepad"></i></a>
-                <a class="btn" href="../index.html">Go Home <i class="icon fas fa-eject"></i></a>
+                <a href="../pages/game.html"id="one"> 
+                    <button class="cybr-btn-sm">
+                        Play Again!<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Play Again!</span>
+                        <span aria-hidden class="cybr-btn__tag"> R25</span>
+                      </button>
+                </a>
+                
+                <a href="../index.html"> <button class="cybr-btn-sm">
+                    Go Home<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">Go Home</span>
+                    <span aria-hidden class="cybr-btn__tag"> R25</span>
+                  </button></a>
             </div>
         </div>
     </div>
